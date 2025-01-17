@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
-</head>
-
-<body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="image/Logo.png" alt="Marmeto Icon" class="marmeto-icon" />
+        Marmeto
     </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
-</body>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <img src="image/Search.jpg" alt="Search" class="icon " />
+        <img src="image/heart.png" alt="Favorites" class="icon " />
+        <img src="image/addtocart.png" alt="Cart" class="icon " />
+      </div>
+    </header>
 
+    <main>
+      <section class="cart">
+        <div class="cart-background">     
+        <img src="image/Logo.png" alt="Marmeto Icon" class="cart-icon" />   
+          <h1>Cart</h1>
+          <p>Home > Cart</p>
+        </div>
+
+        <div class="cart-container">
+          <div class="cart-table">
+            <table id="cartTable">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Subtotal</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="cartItems">
+                <!-- Cart items will be injected here dynamically -->
+              </tbody>
+            </table>
+          </div>
+          <div class="cart-totals">
+            <h2>Cart Totals</h2>
+            <div class="totals">
+              <p>Subtotal: <span id="cartSubtotal">₹0.00</span></p>
+              <p>Total: <span id="cartTotal">₹0.00</span></p>
+            </div>
+            <button class="checkout" id="checkoutButton">Check Out</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footer-section">
+          <div class="footer-item">
+            <img src="image/trophy.png" alt="High Quality" class="small-icon" />
+            <div class="footer-text">
+              <p>High Quality</p>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+          <div class="footer-item">
+            <img src="image/warrenty.jpg" alt="Warranty" class="small-icon" />
+            <div class="footer-text">
+              <p>Warranty Protection</p>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+          <div class="footer-item">
+            <img src="image/Shipping.png" alt="Free Shipping" class="small-icon" />
+            <div class="footer-text">
+              <p>Free Shipping</p>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+          <div class="footer-item">
+            <img src="image/download.png" alt="Support" class="small-icon" />
+            <div class="footer-text">
+              <p>24 / 7 Support</p>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
+    <script src="script.js"></script>
+  </body>
 </html>
